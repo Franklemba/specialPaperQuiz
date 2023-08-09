@@ -1,0 +1,115 @@
+<div class="quiz">
+    <h2>Quiz</h2>
+
+    <form action="/results" method="post">
+
+        
+            <% papers.paperOne.forEach(paper => { %>
+                    <div class="quiz-container">
+                        <div class="question">
+                            <img src="/sp1/<%=paper.question%>" alt="question" srcset="">
+                             <div class="options ID<%=paper.id%>">
+                                <span>A</span>
+                                <input type="radio" name="ans<%=paper.id%>" value="A" id="" required >
+                                <span>B</span>
+                                <input type="radio" name="ans<%=paper.id%>" value="B" id="" required>
+                                <span>C</span>
+                                <input type="radio" name="ans<%=paper.id%>" value="C" id="" required>
+                                <span>D</span>
+                                <input type="radio" name="ans<%=paper.id%>" value="D" id="" required>
+                             </div>
+                        </div>
+                    </div>
+                    <hr>
+            <% }) %>
+
+            <input type="submit" value="submit" placeholder="submit">
+    </form>
+
+     
+</div>
+
+
+<style>
+    .quiz {
+      font-family: Arial, sans-serif;
+      margin-top: 20%;
+      /* margin: 5%; */
+      padding-top: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* height: 100vh; */
+      background-color: #f3f3f3;
+    }
+  
+    .quiz-container {
+      width: fit-content;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    .question {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  
+    .question img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+  
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  
+    .options span {
+      margin-right: 5px;
+      font-size: large;
+      font-weight: bolder;
+      color: black;
+    }
+  
+    .options input[type="radio"] {
+      margin-right: 10px;
+      border: solid black 2px;
+      font-size: large;
+      font-weight: bolder;
+      color: black
+    }
+  
+    hr {
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin: 15px 0;
+    }
+
+    .quiz-container {
+    max-width: 800px; /* Adjust this value based on your design */
+    margin: 0 auto;
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .quiz {
+      margin: 2%;
+    }
+    .quiz-container {
+      padding: 10px;
+    }
+}
+  </style>
+  
