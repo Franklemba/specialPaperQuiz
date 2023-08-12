@@ -1,0 +1,413 @@
+{
+    "paperOne": [
+      {
+        "question": "question1.jpg",
+        "ans": "A",
+        "specialPaper": "sp1",
+        "id": 1
+      },
+      {
+        "question": "question2.jpg",
+        "ans": "B",
+        "specialPaper": "sp1",
+        "id": 2
+      },
+      {
+        "question": "question3.jpg",
+        "ans": "B",
+        "specialPaper": "sp1",
+        "id": 3
+      },
+      {
+        "question": "question4.jpg",
+        "ans": "C",
+        "specialPaper": "sp1",
+        "id": 4
+      },
+      {
+        "question": "question5.jpg",
+        "ans": "B",
+        "specialPaper": "sp1",
+        "id": 5
+      },{
+        "question": "question6.jpg",
+        "ans": "B",
+        "specialPaper": "sp1",
+        "id": 6
+      },
+      {
+        "question": "question7.jpg",
+        "ans": "B",
+        "specialPaper": "sp1",
+        "id": 7
+      },
+      {
+        "question": "question8.jpg",
+        "ans": "B",
+        "specialPaper": "sp1",
+        "id": 8
+      },
+      {
+        "question": "question9.jpg",
+        "ans": "B",
+        "specialPaper": "sp1",
+        "id": 9
+      },
+      {
+        "question": "question10.jpg",
+        "ans": "C",
+        "specialPaper": "sp1",
+        "id": 10
+      },
+      {
+        "question": "question11.jpg",
+        "ans": "A",
+        "specialPaper": "sp1",
+        "id": 11
+      },
+      {
+        "question": "question12.jpg",
+        "ans": "D",
+        "specialPaper": "sp1",
+        "id": 12
+      },
+      {
+        "question": "question13.jpg",
+        "ans": "A",
+        "specialPaper": "sp1",
+        "id": 13
+      },
+      {
+        "question": "question14.jpg",
+        "ans": "D",
+        "specialPaper": "sp1",
+        "id": 14
+      },
+      {
+        "question": "question15.jpg",
+        "ans": "D",
+        "specialPaper": "sp1",
+        "id": 15
+      },
+      {
+        "question": "question16.jpg",
+        "ans": "C",
+        "specialPaper": "sp1",
+        "id": 16
+      },{
+        "question": "question17.jpg",
+        "ans": "C",
+        "specialPaper": "sp1",
+        "id": 17
+      },
+      {
+        "question": "question18.jpg",
+        "ans": "A",
+        "specialPaper": "sp1",
+        "id": 18
+      },
+      {
+        "question": "question19.jpg",
+        "ans": "B",
+        "specialPaper": "sp1",
+        "id": 19
+      },
+      {
+        "question": "question20.jpg",
+        "ans": "B",
+        "specialPaper": "sp1",
+        "id": 20
+      },
+      {
+        "question": "question21.jpg",
+        "ans": "D",
+        "specialPaper": "sp1",
+        "id": 21
+      },
+      {
+        "question": "question22.jpg",
+        "ans": "D",
+        "specialPaper": "sp1",
+        "id": 22
+      },
+      {
+        "question": "question23.jpg",
+        "ans": "A",
+        "specialPaper": "sp1",
+        "id": 23
+      },
+      {
+        "question": "question24.jpg",
+        "ans": "C",
+        "specialPaper": "sp1",
+        "id": 24
+      },
+      {
+        "question": "question25.jpg",
+        "ans": "C",
+        "specialPaper": "sp1",
+        "id": 25
+      },
+      {
+        "question": "question26.jpg",
+        "ans": "C",
+        "specialPaper": "sp1",
+        "id": 26
+      },
+      {
+        "question": "question27.jpg",
+        "ans": "D",
+        "specialPaper": "sp1",
+        "id": 27
+      },{
+        "question": "question28.jpg",
+        "ans": "B",
+        "specialPaper": "sp1",
+        "id": 28
+      },
+      {
+        "question": "question29.jpg",
+        "ans": "D",
+        "specialPaper": "sp1",
+        "id": 29
+      },
+      {
+        "question": "question30.jpg",
+        "ans": "C",
+        "specialPaper": "sp1",
+        "id": 30
+      },
+      {
+        "question": "question31.jpg",
+        "ans": "D",
+        "specialPaper": "sp1",
+        "id": 31
+      },
+      {
+        "question": "question32.jpg",
+        "ans": "C",
+        "specialPaper": "sp1",
+        "id": 32
+      },
+      {
+        "question": "question33.jpg",
+        "ans": "B",
+        "specialPaper": "sp1",
+        "id": 33
+      },
+      {
+        "question": "question34.jpg",
+        "ans": "A",
+        "specialPaper": "sp1",
+        "id": 34
+      },
+      {
+        "question": "question35.jpg",
+        "ans": "D",
+        "specialPaper": "sp1",
+        "id": 35
+      },
+      {
+        "question": "question36.jpg",
+        "ans": "C",
+        "specialPaper": "sp1",
+        "id": 36
+      },
+      {
+        "question": "question37.jpg",
+        "ans": "B",
+        "specialPaper": "sp1",
+        "id": 37
+      },
+      {
+        "question": "question38.jpg",
+        "ans": "D",
+        "specialPaper": "sp1",
+        "id": 38
+      },{
+        "question": "question39.jpg",
+        "ans": "A",
+        "specialPaper": "sp1",
+        "id": 39
+      },
+      {
+        "question": "question40.jpg",
+        "ans": "B",
+        "specialPaper": "sp1",
+        "id": 40
+      }
+    ],
+    "paperTwo":[
+      {
+        "question": "question1.jpg",
+        "ans": "C",
+        "specialPaper": "sp2",
+        "id": 1
+      },
+      {
+        "question": "question2.jpg",
+        "ans": "B",
+        "specialPaper": "sp2",
+        "id": 2
+      },
+      {
+        "question": "question3.jpg",
+        "ans": "B",
+        "specialPaper": "sp2",
+        "id": 3
+      },
+      {
+        "question": "question4.jpg",
+        "ans": "D",
+        "specialPaper": "sp2",
+        "id": 4
+      },
+      {
+        "question": "question5.jpg",
+        "ans": "A",
+        "specialPaper": "sp2",
+        "id": 5
+      },{
+        "question": "question6.jpg",
+        "ans": "A",
+        "specialPaper": "sp2",
+        "id": 6
+      },
+      {
+        "question": "question7.jpg",
+        "ans": "B",
+        "specialPaper": "sp2",
+        "id": 7
+      },
+      {
+        "question": "question8.jpg",
+        "ans": "D",
+        "specialPaper": "sp2",
+        "id": 8
+      },
+      {
+        "question": "question9.jpg",
+        "ans": "D",
+        "specialPaper": "sp2",
+        "id": 9
+      },
+      {
+        "question": "question11.jpg",
+        "ans": "A",
+        "specialPaper": "sp2",
+        "id": 11
+      },
+      {
+        "question": "question12.jpg",
+        "ans": "C",
+        "specialPaper": "sp2",
+        "id": 12
+      },
+      {
+        "question": "question13.jpg",
+        "ans": "A",
+        "specialPaper": "sp2",
+        "id": 13
+      },
+      {
+        "question": "question14.jpg",
+        "ans": "C",
+        "specialPaper": "sp2",
+        "id": 14
+      },
+      {
+        "question": "question15.jpg",
+        "ans": "A",
+        "specialPaper": "sp2",
+        "id": 15
+      },
+      {
+        "question": "question16.jpg",
+        "ans": "A",
+        "specialPaper": "sp2",
+        "id": 16
+      },{
+        "question": "question17.jpg",
+        "ans": "C",
+        "specialPaper": "sp2",
+        "id": 17
+      },
+      {
+        "question": "question18.jpg",
+        "ans": "A",
+        "specialPaper": "sp2",
+        "id": 18
+      },
+      {
+        "question": "question19.jpg",
+        "ans": "C",
+        "specialPaper": "sp2",
+        "id": 19
+      },
+      {
+        "question": "question20.jpg",
+        "ans": "B",
+        "specialPaper": "sp2",
+        "id": 20
+      },
+      {
+        "question": "question21.jpg",
+        "ans": "D",
+        "specialPaper": "sp2",
+        "id": 21
+      },
+      {
+        "question": "question22.jpg",
+        "ans": "A",
+        "specialPaper": "sp2",
+        "id": 22
+      },
+      {
+        "question": "question23.jpg",
+        "ans": "B",
+        "specialPaper": "sp2",
+        "id": 23
+      },
+      {
+        "question": "question24.jpg",
+        "ans": "D",
+        "specialPaper": "sp2",
+        "id": 24
+      },
+      {
+        "question": "question25.jpg",
+        "ans": "C",
+        "specialPaper": "sp2",
+        "id": 25
+      },
+      {
+        "question": "question26.jpg",
+        "ans": "C",
+        "specialPaper": "sp2",
+        "id": 26
+      },
+      {
+        "question": "question27.jpg",
+        "ans": "A",
+        "specialPaper": "sp2",
+        "id": 27
+      },{
+        "question": "question28.jpg",
+        "ans": "D",
+        "specialPaper": "sp2",
+        "id": 28
+      },
+      {
+        "question": "question29.jpg",
+        "ans": "B",
+        "specialPaper": "sp2",
+        "id": 29
+      },
+      {
+        "question": "question30.jpg",
+        "ans": "D",
+        "specialPaper": "sp2",
+        "id": 30
+      }
+    ]
+  }

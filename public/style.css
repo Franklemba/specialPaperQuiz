@@ -181,122 +181,6 @@ ul, li, ol{
     WP CORE
 -------------------------------------------------------------------*/
 
-.first {
-    clear: both
-}
-
-.last {
-    margin-right: 0
-}
-
-.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-.aligncenter,
-div.aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
-}
-
-.alignright {
-    float: right;
-    margin: 10px 0 20px 20px;
-}
-
-.alignleft {
-    float: left;
-    margin: 10px 20px 20px 0;
-}
-
-a img.alignright {
-    float: right;
-    margin: 10px 0 20px 20px;
-}
-
-a img.alignnone {
-    margin: 10px 20px 20px 0;
-}
-
-a img.alignleft {
-    float: left;
-    margin: 10px 20px 20px 0;
-}
-
-a img.aligncenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-
-.wp-caption {
-    background: #fff;
-    border: 1px solid #f0f0f0;
-    max-width: 96%;
-    /* Image does not overflow the content area */
-    padding: 5px 3px 10px;
-    text-align: center;
-}
-
-.wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignleft {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignright {
-    margin: 5px 0 20px 20px;
-}
-
-.wp-caption img {
-    border: 0 none;
-    height: auto;
-    margin: 0;
-    max-width: 98.5%;
-    padding: 0;
-    width: auto;
-}
-
-.wp-caption p.wp-caption-text {
-    font-size: 11px;
-    line-height: 17px;
-    margin: 0;
-    padding: 0 4px 5px;
-}
-
-
-/* Text meant only for screen readers. */
-
-.screen-reader-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-}
-
-.screen-reader-text:focus {
-    background-color: #f1f1f1;
-    border-radius: 3px;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
-    color: #21759b;
-    display: block;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    height: auto;
-    left: 5px;
-    line-height: normal;
-    padding: 15px 23px 14px;
-    text-decoration: none;
-    top: 5px;
-    width: auto;
-    z-index: 100000;
-    /* Above WP toolbar. */
-}
 
 
 /*------------------------------------------------------------------
@@ -306,17 +190,18 @@ a img.aligncenter {
 .navbar-dark{
 	background-color: transparent;
 	transition: all 0.3s ease 0s;
+    z-index: 999;
 }
 
 .navbar-dark .navbar-nav .nav-link{
-	color: #ffffff;
+	color: black;
 	letter-spacing: 1px;
 	font-size: 14px;
 	position: relative;
 	text-transform: capitalize;
 }
 .navbar-dark .navbar-nav .nav-link:hover{
-	color: #ffffff;
+	color: #28a9e2;
 }
 .navbar-dark .navbar-nav .nav-link.active{
 	font-weight: 600;
@@ -367,71 +252,6 @@ a img.aligncenter {
 /*------------------------------------------------------------------
     SECTIONS
 -------------------------------------------------------------------*/
-
-.main-banner{
-	height: 100%;
-	position: relative;
-}
-
-.main-banner{
-	display: table;
-    width: 100%;
-	text-align: center;
-}
-.main-banner::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #000;
-    z-index: 0;
-    opacity: .6;
-}
-.heading{
-	color: #fff;
-	display: table-cell;
-	vertical-align: middle;
-	position: relative;
-	z-index: 1;
-}
-.heading h1{
-	color: #ffffff;
-	font-weight: 700;
-	font-size: 62px;
-	text-transform: capitalize;
-}
-.heading p{
-	font-size: 18px;
-	padding: 20px 0px;
-}
-
-.heading h3{
-	color: ffffff;
-}
-
-.cd-words-wrapper {
-  display: inline-block;
-  position: relative;
-  text-align: left;
-}
-.cd-words-wrapper b {
-  display: inline-block;
-  position: absolute;
-  white-space: nowrap;
-  left: 0;
-  top: 0;
-}
-.cd-words-wrapper b.is-visible {
-  position: relative;
-}
-.no-js .cd-words-wrapper b {
-  opacity: 0;
-}
-.no-js .cd-words-wrapper b.is-visible {
-  opacity: 1;
-}
 
 /* -------------------------------- 
 
@@ -2547,7 +2367,7 @@ select.mobile-device {
     color: #999 !important;
     margin: 0 !important;
     padding: 0 !important;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 .stat-wrap p {
@@ -2556,7 +2376,7 @@ select.mobile-device {
     margin: 0;
     font-weight: 300;
     padding: 4px 0 0;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 #preloader {
