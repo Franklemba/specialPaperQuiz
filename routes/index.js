@@ -34,7 +34,7 @@ router.get("/", async (req, res) => {
                 const shuffledPaperOne = paperOne.paperOne.sort(() => Math.random() - 0.5);
           
                 // Select the first 20 elements
-                const selectedData = shuffledPaperOne.slice(0, 5);
+                const selectedData = shuffledPaperOne.slice(0, 15);
           
                 res.render("home/quiz", {
                   papers: selectedData
@@ -53,7 +53,7 @@ router.get("/", async (req, res) => {
               const shuffledPaperTwo = PaperTwo.paperTwo.sort(() => Math.random() - 0.5);
         
               // Select the first 20 elements
-              const selectedData = shuffledPaperTwo.slice(0, 5);
+              const selectedData = shuffledPaperTwo.slice(0, 15);
         
               res.render("home/quiz", {
                 papers: selectedData
