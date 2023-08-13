@@ -1,37 +1,34 @@
-<div class="home">
-    <h1>
-        Welcome to the Special Paper One and Two quize generator site
-    </h1>
-      
-       <p>select below</p>
-
-         <div class="papers">
-            <a href="/sp1_quiz">special paper one</a>
-            <a href="/sp2_quiz">special paper two</a>
-         </div>
+<main class="main"> 
     
-</div>
+    <section class="home">
+        <div class="home-content">
+            <h1>Grade7Quiz</h1>
+            <p> </p>
+            <p>Welcome to G7 quiz</p>
+            <p>Press the button to take the quiz</p>
 
-<style>
-    .home{
+            <button class="start-btn">Start Quiz</button>
+        </div>
+    </section>
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /* margin-top: 50%; */
-        height: 100vh;
-        /* margin: auto; */
-        padding: 10%;
-    }
 
-    .home .papers{
-        display: flex;
-        flex-direction: column;
-    }
-   @media (max-width: 768px) {
-      .home {
-        height: 95vh;
-      }
-   }
-</style>
+ </main>
+
+<div class="popup-infor">
+    <h2>Quiz Guide</h2>
+    <span class=" close-btn exit-btn">&times;</span>
+    <span class="infor">1. You have four options for each Question.</span>
+    <span class="infor">2. Select one that best suits the Answer.</span>
+   
+    <div class="btn-group">
+        <button class="infor-btn exit-btn"><a href="/sp1_quiz">Paper 1</a></button>
+        <button class="infor-btn exit-btn"><a href="/sp2_quiz">Paper 2</a></button>
+        <!-- <span class="infor-btn"> <a href=""> Paper1</a></span>
+        <span class="infor-btn"> <a href=""> Paper2</a></span> -->
+    
+        <!-- <a href="#" class="infor-btn continue-btn">Continue</a> -->
+    </div >
+
+ </div>
+
+

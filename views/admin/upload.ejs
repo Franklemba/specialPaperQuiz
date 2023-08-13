@@ -1,12 +1,12 @@
 <div class="admin container">
-    <h1>welcome to the admin page</h1>
+    <h2> admin </h2>
       <p><a href="/admin/all">view all questions</a></p>
     <hr>
 
     <form action="/admin" enctype="multipart/form-data" method="post">
         <div>
             <h3>input image question</h3>
-        <input type="file" name="question" id=""/>
+        <input type="file" name="question" id="" required />
 
         </div>
         <hr>
@@ -54,5 +54,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+    }
+    h3{
+        color: black;
     }
 </style>
