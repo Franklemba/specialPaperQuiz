@@ -25,7 +25,7 @@
                 <div class="quiz-container">
                   <div class="question" >
                     <div class="question-number">Question <%= index + 1 %></div>
-                    <img src="/<%=paper.specialPaper%>/<%=paper.question%>" alt="question" srcset="">
+                    <img src="/uploads/sp1/<%=paper.question%>" alt="question" srcset="">
                     <div class="options ">
                         <input type="radio" name="ans<%=paper.question%>" value="A" id="" required disabled <%= paper.correctAnswer === 'A' ? 'checked' : '' %> class="<%= paper.isCorrect ? 'correct' : 'incorrect' %>">
                       <span>A</span>

@@ -1,0 +1,57 @@
+<div class="admin container">
+    <h1>welcome to the admin page</h1>
+    <hr>
+
+    <form action="/admin" enctype="multipart/form-data" method="post">
+        <div>
+            <h3>input image question</h3>
+        <input type="file" name="question" id=""/>
+
+        </div>
+        <hr>
+        <div>
+            <h3>Select answer for question</h3>
+        <select name="ans" id="answers">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+
+
+        </div>       
+         <hr>
+        <div>
+         <h3>Select paper</h3>
+        <select name="specialPaper" id="" >
+            <option value="sp1">Special Paper one</option>
+            <option value="sp2">Special Paper two</option>
+        </select>
+
+        </div>
+        <hr>
+         <div>
+
+             <input type="submit" value="Submit"/>
+         </div>
+    </form>
+</div>
+
+
+<style>
+    .admin{
+        height: 100vh;
+        /* padding-top: 10%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .admin div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+</style>
