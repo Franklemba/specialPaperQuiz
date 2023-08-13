@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const fs = require('fs').promises; // Import the fs.promises module
 const multer = require('multer');
 const Question = require('../models/questionSchema'); // Import your question schema
 const path = require('path'); // Import the path module
@@ -44,5 +45,58 @@ router.post('/', upload.single('question'), async (req, res) => {
         res.status(500).send('Unable to save question. Please check the fields and file.');
     }
 });
+
+router.get('/all', async (req,res)=>{
+
+
+    const question = await Question.find();
+
+    try{
+        res.render('admin/allquestions',{
+                    questions: question
+                })
+    }
+    catch (error) {
+        console.error('Error viewing all questions:', error);
+        res.status(500).send('error displaying page, Please try again.');
+    }
+
+
+})
+
+router.post('/delete/:id', async (req, res) => {
+    const id = req.params.id;
+
+    try {
+        // Find the question in the database by ID
+        const question = await Question.findById(id);
+
+        if (!question) {
+            return res.status(404).send('Question not found');
+        }
+
+        // Delete the uploaded picture from its path destination
+        const imagePath = `public/uploads/sp1/${question.question}`;
+        await fs.unlink(imagePath);
+
+        // Delete the question record from the database
+        
+
+        await question.deleteOne({    ///deletes selected item
+            _id:`${id}`      
+        })
+
+        console.log('Question deleted successfully');
+        res.send('Question deleted successfully');
+    } catch (error) {
+        console.error('Error deleting question:', error);
+        res.status(500).send('Unable to delete question. Please try again.');
+    }
+});
+
+
+
+
+
 
 module.exports = router;
