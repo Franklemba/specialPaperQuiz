@@ -1,33 +1,37 @@
 <div class="quiz">
-    <% questions.forEach(data => { %>
+    
+    <% if (questions && questions.length > 0) { %>
 
-        <div style=" display: flex;   background-color: #d0e1e0; margin-top: 10px; padding: 5px;"  >
-            <div class="quiz-container">
-                <div class="question" >
-                    
-                    <img src="/uploads/sp1/<%=data.question%>" alt="question" srcset="">
+        <% questions.forEach(data => { %>
 
-                    <p>Ans: <%=data.ans%></p>
-                    <p>special paper: <%=data.specialPaper%></p>
-                    <p><strong>Date uploaded:</strong> <%= data.createdAt.toString().split('GMT')[0] %></p>
-                    <div style="display: flex; ">
-        
-                        <form action="/admin/delete/<%= data._id%>" method="post">
-                            <input type="hidden" name="id" value="<%= data._id%>">
-                            <input type="submit" class="btn" value="delete" id="submit" />
-                        </form>
+            <div style=" display: flex;   background-color: #d0e1e0; margin-top: 10px; padding: 5px;"  >
+                <div class="quiz-container">
+                    <div class="question" >
+                        
+                        <img src="/uploads/sp1/<%=data.question%>" alt="question" srcset="">
+    
+                        <p>Ans: <%=data.ans%></p>
+                        <p>special paper: <%=data.specialPaper%></p>
+                        <p><strong>Date uploaded:</strong> <%= data.createdAt.toString().split('GMT')[0] %></p>
+                        <div style="display: flex; ">
+            
+                            <form action="/admin/delete/<%= data._id%>" method="post">
+                                <input type="hidden" name="id" value="<%= data._id%>">
+                                <input type="submit" class="btn" value="delete" id="submit" />
+                            </form>
+                        </div>
                     </div>
-                </div>
-              </div>
-        </div>
-       
-        <hr>
+                  </div>
+            </div>
            
-
-        <!-- </div> -->
-
+            <hr>
+               
+         
+        <% }) %>
      
-    <% }) %>
+    <% }else { %>
+        <h1>No uploads available.</h1>
+    <% } %>
 </div>
 
 

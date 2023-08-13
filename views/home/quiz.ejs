@@ -1,54 +1,54 @@
 <div class="quiz">
-    <h2>Quiz</h2>
+  <h2>Quiz</h2>
 
-  
-    <h1>Welcome to the Special Paper <%= papers[0].specialPaper === 'sp1' ? 'One' : 'Two' %> Quiz!</h1>
-    <p>Test your knowledge with our special quiz. Answer the following questions to the best of your abilities.</p>
+  <% if (papers && papers.length > 0) { %>
+      <h1>Welcome to the Special Paper <%= papers[0].specialPaper === 'sp1' ? 'One' : 'Two' %> Quiz!</h1>
+      <p>Test your knowledge with our special quiz. Answer the following questions to the best of your abilities.</p>
 
-    <form action="/results/<%= papers[0].specialPaper === 'sp1' ? 'sp1' : 'sp2' %>" method="post">
-      <div class="timer" id="timer">00:00</div>
+      <form action="/results/<%= papers[0].specialPaper === 'sp1' ? 'sp1' : 'sp2' %>" method="post">
+          <div class="timer" id="timer">00:00</div>
 
-      <h2>Instructions:</h2>
-      <ol>
-          <li>For each question, select the best answer choice.</li>
-          <li>Click the "Submit" button at the end of the quiz to see your results.</li>
-      </ol>
+          <h2>Instructions:</h2>
+          <ol>
+              <li>For each question, select the best answer choice.</li>
+              <li>Click the "Submit" button at the end of the quiz to see your results.</li>
+          </ol>
 
-      <% papers.forEach((paper, index) => { %>
-          <div class="quiz-container">
-              <div class="question">
-                  <div class="question-number">Question <%= index + 1 %></div>
-                  <img src="/uploads/sp1/<%=paper.question%>" alt="question" srcset="">
-                  <div class="options ID<%=paper.id%>">
-                      <span>A</span>
-                      <input type="radio" name="ans<%=paper._id%>" value="A" id="" required>
-                      <span>B</span>
-                      <input type="radio" name="ans<%=paper._id%>" value="B" id="" required>
-                      <span>C</span>
-                      <input type="radio" name="ans<%=paper._id%>" value="C" id="" required>
-                      <span>D</span>
-                      <input type="radio" name="ans<%=paper._id%>" value="D" id="" required>
+          <% papers.forEach((paper, index) => { %>
+              <div class="quiz-container">
+                  <div class="question">
+                      <div class="question-number">Question <%= index + 1 %></div>
+                      <img src="/uploads/sp1/<%=paper.question%>" alt="question" srcset="">
+                      <div class="options ID<%=paper.id%>">
+                          <span>A</span>
+                          <input type="radio" name="ans<%=paper._id%>" value="A" id="" required>
+                          <span>B</span>
+                          <input type="radio" name="ans<%=paper._id%>" value="B" id="" required>
+                          <span>C</span>
+                          <input type="radio" name="ans<%=paper._id%>" value="C" id="" required>
+                          <span>D</span>
+                          <input type="radio" name="ans<%=paper._id%>" value="D" id="" required>
+                      </div>
                   </div>
               </div>
-          </div>
-          <hr>
-      <% }) %>
-   
-      <div class="timerContainer">
-    
-      </div>
-      <input type="submit" value="Submit Quiz" placeholder="Submit">
-    </form>
-    
-   
+              <hr>
+          <% }) %>
 
-  
+          <div class="timerContainer">
+          
+          </div>
+          <input type="submit" value="Submit Quiz" placeholder="Submit">
+      </form>
+  <% } else { %>
+      <h1>No data available.</h1>
+  <% } %>
+</div>
+
 
 
  
 
      
-</div>
 
 
 <script>
