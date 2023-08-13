@@ -1,8 +1,8 @@
 <div class="quiz">
-  <h2>Quiz</h2>
+  <!-- <h2>Special paper </h2> -->
 
   <% if (papers && papers.length > 0) { %>
-      <h1>Welcome to the Special Paper <%= papers[0].specialPaper === 'sp1' ? 'One' : 'Two' %> Quiz!</h1>
+      <h2>Special Paper <%= papers[0].specialPaper === 'sp1' ? 'One' : 'Two' %> </h2>
       <p>Test your knowledge with our special quiz. Answer the following questions to the best of your abilities.</p>
 
       <form action="/results/<%= papers[0].specialPaper === 'sp1' ? 'sp1' : 'sp2' %>" method="post">

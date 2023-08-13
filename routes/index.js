@@ -18,6 +18,11 @@ router.get("/", async (req, res) => {
     
   });
 
+  router.get("/admin", async(req,res)=>{
+    res.render("home/about",{
+      
+    })
+  })
  //////////////////////////////////   /quiz link BEGIN 
  router.get("/sp1_quiz", async (req, res) => {
 
