@@ -80,7 +80,7 @@ router.post('/delete/:id', async (req, res) => {
         await fs.unlink(imagePath);
 
         // Delete the question record from the database
-        
+        // await question.remove();
 
         await question.deleteOne({    ///deletes selected item
             _id:`${id}`      
