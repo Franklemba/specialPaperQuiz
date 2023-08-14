@@ -17,8 +17,8 @@ const { ensureAuthenticated} = require('./config/auth');
 
 // connecting to database
 //mongodb+srv://franklemba:kU3XmafGzdHYYzfX@cluster0.xnljw5s.mongodb.net/?retryWrites=true&w=majority
-//mongoose.connect("mongodb+srv://franklemba:kU3XmafGzdHYYzfX@cluster0.xnljw5s.mongodb.net/?retryWrites=true&w=majority").then(()=>{
-    mongoose.connect("mongodb://localhost:27017/specialPaperQuiz").then(()=>{    
+mongoose.connect("mongodb+srv://franklemba:kU3XmafGzdHYYzfX@cluster0.xnljw5s.mongodb.net/?retryWrites=true&w=majority").then(()=>{
+    //mongoose.connect("mongodb://localhost:27017/specialPaperQuiz").then(()=>{    
     console.log('database is connected')
 }).catch((err)=> console.log('error connecting to database ',err));
 
