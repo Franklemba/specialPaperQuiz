@@ -10,7 +10,6 @@ const homeRouter = require('./routes/index')
 const adminRouter = require('./routes/admin')
 
 
-
 // connecting to database
 //mongodb+srv://franklemba:kU3XmafGzdHYYzfX@cluster0.xnljw5s.mongodb.net/?retryWrites=true&w=majority
 mongoose.connect("mongodb+srv://franklemba:kU3XmafGzdHYYzfX@cluster0.xnljw5s.mongodb.net/?retryWrites=true&w=majority").then(()=>{
