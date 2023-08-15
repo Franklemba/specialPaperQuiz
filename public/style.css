@@ -468,7 +468,7 @@ margin: 0 auto;
 
 
 /*about page  */
- body {
+   body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
           }
@@ -487,7 +487,7 @@ margin: 0 auto;
           }
           
             /* Remove extra left and right margins, due to padding */
-            .row {margin: 0 -3px;}
+            .row {margin: 0 -5px;}
   
             /* Clear floats after the columns */
             .row:after {
@@ -509,6 +509,7 @@ margin: 0 auto;
           }
           
           .container {
+            font-size: 14px;
             padding: 0 16px;
           }
           
@@ -551,9 +552,9 @@ margin: 0 auto;
             
         
             }
-            
+           
               .container h2 {
-                padding: 0 6px;
+                padding: 0 9px;
               }
               
               
@@ -567,7 +568,6 @@ margin: 0 auto;
                 width: 50%;
               }
               .img{
-                width: 35px;
+                width: 30px;
               }
             }
-
