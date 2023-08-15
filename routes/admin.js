@@ -4,6 +4,8 @@ const fs = require('fs').promises; // Import the fs.promises module
 const multer = require('multer');
 const Question = require('../models/questionSchema'); // Import your question schema
 const path = require('path'); // Import the path module
+const user = require('../models/adminSchema');
+
 
 const imageMimeType = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'];
 const storage = multer.diskStorage({
@@ -27,6 +29,9 @@ const upload = multer({
 router.get('/', (req, res) => {
     res.render('admin/upload');
 });
+
+
+
 
 // Handle the form submission and save the question
 router.post('/', upload.single('question'), async (req, res) => {
@@ -97,6 +102,27 @@ router.post('/delete/:id', async (req, res) => {
 
 
 
-
+async function registerUser(userName, password) {
+    try {
+      // Generate a salt to use for hashing the password
+      const salt = await bcrypt.genSalt(10);
+  
+      // Hash the password using the salt
+      const hashedPassword = await bcrypt.hash(password, salt);
+  
+      // Create a new user document with the hashed password
+      const user = new User({
+        userName: userName,
+        password: hashedPassword
+      });
+  
+      // Save the user document to the database
+      await user.save();
+  
+      console.log(`User ${userName} registered successfully`);
+    } catch (error) {
+      console.error(`Error registering user: ${error.message}`);
+    }
+  }
 
 module.exports = router;

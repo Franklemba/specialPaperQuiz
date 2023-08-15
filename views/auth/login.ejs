@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="../css/authStyles.css" />
+
+<div class="container">
+  
+        <div class="error-message"><%= message %></div>
+  
+    <form class="authWrapper" action="/auth/login" method="post" onsubmit="return validateForm()">
+        <input type="text" name="userName" placeholder="Username" />
+        <input type="password" name="password" placeholder="Password" />
+        <button type="submit" class="btnLogin">Login</button>
+    </form>
+</div>
+
+<script>
+function validateForm() {
+    var userName = document.getElementsByName("userName")[0].value;
+    var password = document.getElementsByName("password")[0].value;
+
+    if (userName === "" || password === "") {
+        showErrorMessage("Please fill in all fields.");
+        return false;
+    }
+    
+    // Add animations or other JS functionality here
+    
+    return true;
+}
+
+function showErrorMessage(message) {
+    var errorElement = document.getElementById("error-message");
+    if (!errorElement) {
+        errorElement = document.createElement("div");
+        errorElement.id = "error-message";
+        errorElement.className = "error-message";
+        document.body.appendChild(errorElement);
+    }
+    errorElement.textContent = message;
+    setTimeout(function() {
+        errorElement.style.opacity = "1";
+    }, 100);
+
+    setTimeout(function() {
+        errorElement.style.opacity = "0";
+    }, 4000);
+}
+
+
+</script>
