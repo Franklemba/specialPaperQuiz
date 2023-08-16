@@ -17,7 +17,7 @@
           <% papers.forEach((paper, index) => { %>
               <div class="quiz-container">
                   <div class="question">
-                      <div class="question-number">Question <%= index + 1 %></div>
+                      <div class="question-number"><p>Question <%= index + 1 %></p></div>
                       <img src="/uploads/sp1/<%=paper.question%>" alt="question" srcset="">
                       <div class="options ID<%=paper.id%>">
                           <span>A</span>
@@ -37,7 +37,9 @@
           <div class="timerContainer">
           
           </div>
-          <input type="submit" value="Submit Quiz" placeholder="Submit">
+          <div class="w3-container w3-padding-64 w3-center">
+            <input class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-black" type="submit" value="Submit Quiz" placeholder="Submit">
+          </div>
       </form>
       
   <% } else { %>

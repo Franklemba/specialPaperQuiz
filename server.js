@@ -24,7 +24,7 @@ mongoose.connect("mongodb+srv://franklemba:kU3XmafGzdHYYzfX@cluster0.xnljw5s.mon
 
 //////setting up the server///////
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3111;
 
 app.use(session({
     secret: 'mysecret',

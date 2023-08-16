@@ -368,7 +368,14 @@ w3-bar {font-family: "Montserrat", sans-serif}
   bottom: 2%;
 }
 
+.quiz .submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+  background-color: red;
 
+}
 .options input[type="radio"].correct + span {
     color: green;
   }
@@ -473,9 +480,9 @@ margin: 0 auto;
             margin: 0;
           }
           
-          html {
+          /* html {
             box-sizing: border-box;
-          }
+          } */
           
           
           .column {
